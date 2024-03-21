@@ -222,7 +222,7 @@ const rootReducer = (state = initialState, action) => {
     let combinado = [].concat(...twitsFiltrados2);
     // console.log((twitsExcluidos,twitsFiltrados).flat())
     // let combinado = twitsFiltrados2.flat()
-  
+   
   
     let objetosRepetidos = combinado.filter((objeto, index) => {
       return combinado.some((obj, i) => i !== index && obj && objeto && obj.id === objeto.id);
