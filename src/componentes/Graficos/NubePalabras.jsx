@@ -13,7 +13,7 @@ export default function NubePalabras() {
   const [fechas, setFechas] = useState(jsonFechas.fechas);
   const [filtroFecha, setFiltroFecha] = useState(fechas[0]);
   const series = Object.keys(dataNube[filtroFecha]);
-  const [filtroSerie, setFiltroSerie] = useState(series[0]); // Estado para almacenar la serie seleccionada
+  const [filtroSerie, setFiltroSerie] = useState(series[0]); 
   const dataGrafico = dataNube[filtroFecha][filtroSerie];
 
   useEffect(() => {

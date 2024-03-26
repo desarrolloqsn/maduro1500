@@ -60,7 +60,6 @@ export default function NubePalabrasTrigrama() {
   const today = new Date();
   const date = today.toISOString().split('T')[0]; // Formato YYYY-MM-DD
 
-  // Nombre del archivo con la fecha actual
   const fileName = `Trigramas_${date}.xlsx`;
 
   saveAs(data, fileName);
